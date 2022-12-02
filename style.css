@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-family: "Noto Sans KR", sans-serif;
+    position: relative;
+    background-image: url(img/1.jpg);
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.clock {
+    margin-top: 100px;
+    text-align: center;
+
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+}
+
+hr{
+    width: 300px;
+    height: 10px;
+    background-color: white;
+    margin: 0 auto 80px auto;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.hidden_nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+/* user name */
+.user_name{
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+.weather {
+    color: orangered;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.plusBtn {
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    transition: all 0.5s;
+}
+
+/* login */
+
+.log_in {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.log_in h3 {
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.log_in form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.log_in input {
+    background-color: inherit;
+    margin-top: 20px;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-bottom: 1px solid orangered;
+    height: 30px;
+    outline: none;
+}
+
+.log_in button {
+    border-radius: 20px;
+    background-color: orangered;
+    border: none;
+    font-size: 16px;
+    padding: 5px;
+    margin: 20px 10px 10px 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.log_in button:hover {
+    box-shadow: 0 0 10px orangered;
+    transition: all 0.3s;
+}
+
+.log_in input::placeholder {
+    color: white;
+}
+
+/* todo */
+
+.todo {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo input {
+    margin-top: 20px;
+    background-color: inherit;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-bottom: 1px solid orangered;
+    height: 30px;
+    outline: none;
+}
+
+.todo input::placeholder {
+    color: white;
+}
+
+.todo button {
+    border-radius: 20px;
+    background-color: orangered;
+    border: none;
+    font-size: 16px;
+    padding: 5px;
+    margin: 20px 10px 10px 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.todo button:hover {
+    box-shadow: 0 0 10px orangered;
+    transition: all 0.3s;
+}
+
+.todo h3 {
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.todo form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.change_btn{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 80px;
+    height: 50px;
+    background-color: royalblue;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.change_btn:hover{
+    box-shadow: 0 0 10px royalblue;
+    transition: all 0.3s;
+}
