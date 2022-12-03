@@ -10,8 +10,7 @@ function onGeoOk(position) {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      weather.innerHTML = `${data.main.temp}℃, ${data.name}(${data.weather[0].main})`
-    });
+      weather.innerHTML = `${data.main.temp}℃, ${data.name}(${data.weather[0].main})`})
 }
 function onGeoError() {
   alert("Cant' find you.");
